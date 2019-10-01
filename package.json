@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/Fossen93/Nerdschool_JavascriptRest/issues"
   },
-  "homepage": "https://github.com/Fossen93/Nerdschool_JavascriptRest#readme"
+  "homepage": "https://github.com/Fossen93/Nerdschool_JavascriptRest#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
