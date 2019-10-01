@@ -1,0 +1,24 @@
+{
+  "name": "nerdschool",
+  "version": "1.0.0",
+  "description": "Nerdschool Javascript and REST",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fossen93/Nerdschool_JavascriptRest.git"
+  },
+  "keywords": [
+    "Javascript",
+    "REST",
+    "Node.js"
+  ],
+  "author": "Sondre Fossen-Romsaas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fossen93/Nerdschool_JavascriptRest/issues"
+  },
+  "homepage": "https://github.com/Fossen93/Nerdschool_JavascriptRest#readme"
+}
