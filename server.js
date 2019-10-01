@@ -1,9 +1,15 @@
 const express = require('express');
+const morgan = require('morgan');
+const bodyParser = require('body-parser');
+const tvShowRouter = require('./tvShow/tvShowRouter');
+
 const app = express();
 const port = 3000;
-const morgan = require('morgan');
 
 app.use(morgan('dev'));
+app.use(bodyParser.json());
+
+app.use('/tvshow', tvShowRouter);
 
 app.get('/', function (request, response) {
     response.send('Hello World');
