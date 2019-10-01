@@ -10,6 +10,7 @@ app.use(morgan('dev'));
 app.use(bodyParser.json());
 
 app.use('/tvshow', tvShowRouter);
+app.use('/tvshow/tvShowId', tvShowRouter);
 
 app.get('/', function (request, response) {
     response.send('Hello World');
