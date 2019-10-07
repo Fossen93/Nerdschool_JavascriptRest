@@ -1,26 +1,28 @@
 const TvShow = require('./TvShow');
+const createId = require('../utils/idUtil');
 
 class TvShowService {
     constructor() {
       this.tvShows = [
-          new TvShow(1, 'Mr.Robot', 'Drama'), 
-          new TvShow(2, 'Black Mirror', 'Drama'),
-          new TvShow(3, 'Silicon Valley', 'Comedy')
+          new TvShow(createId(), 'Mr.Robot', 'Drama'), 
+          new TvShow(createId(), 'Black Mirror', 'Drama'),
+          new TvShow(createId(), 'Silicon Valley', 'Comedy')
         ];
       
     }
     
     getAll() {
-      return this.tvShows;
+        return this.tvShows;
     }
 
-    getById(id) {
-        var tvshow;
-        for(i=0; i < this.tvShows.length; i++){
-            if (this.tvShows[i].id == id){
-                tvshow = this.tvShows[i];
-            }
-        }
+
+    getById(id) {  
+        return this.tvShows.find(tvshow => tvshow.id == id);
+    }
+
+    createTvShow(name, genre){
+        const tvshow = new TvShow(createId(), name, genre);
+        this.tvShows.push(tvshow);
         return tvshow;
     }
 }

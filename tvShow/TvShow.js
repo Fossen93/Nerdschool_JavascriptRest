@@ -4,5 +4,5 @@ class TvShow {
       this.name = name;
       this.genre = genre;    
     }
-  }
-  module.exports = TvShow;
+}
+module.exports = TvShow;
