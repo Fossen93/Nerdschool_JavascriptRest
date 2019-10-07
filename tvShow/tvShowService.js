@@ -25,5 +25,10 @@ class TvShowService {
         this.tvShows.push(tvshow);
         return tvshow;
     }
+
+    remove(id) {
+        this.tvShows = this.tvShows.filter(tvShow => tvShow.id !== id);
+        return this.tvShows
+    }
 }
 module.exports = new TvShowService();
